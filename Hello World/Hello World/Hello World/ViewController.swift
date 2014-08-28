@@ -26,8 +26,7 @@ class ViewController: UIViewController {
     
     
     var favoriteBand:String = "The Fray"
-    label.text = favoriteBand
-    @IBOutlet var label: UILabel!
-    
+    @IBOutlet var text: UILabel!
+    text.text = favoriteBand
 }
 
