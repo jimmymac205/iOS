@@ -9,11 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
+    
+    @IBOutlet weak var bandLabel: UILabel!
+    
+    @IBOutlet weak var sentence: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        bandLabel.text = favoriteBand
+        sentence.text = 
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,12 +27,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
-    
-    
-    
     var favoriteBand:String = "The Fray"
-    @IBOutlet var text: UILabel!
-    text.text = favoriteBand
+    var numberOfMembers:Int = 5
+    
+    
+    
+    
+
+    
 }
 
