@@ -14,12 +14,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sentence: UILabel!
    
+    @IBAction func changeBand(sender: AnyObject) {
+    
+    bandLabel.textColor = UIColor.blueColor()
+    sentence.textColor = UIColor.redColor()
+    
+    
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         bandLabel.text = favoriteBand
-        sentence.text = 
+        sentence.text = "\(favoriteBand) has \(numberOfMembers) members in it."
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +39,7 @@ class ViewController: UIViewController {
     var favoriteBand:String = "The Fray"
     var numberOfMembers:Int = 5
     
-    
-    
+ 
     
 
     
