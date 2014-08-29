@@ -10,15 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var bandLabel: UILabel!
     
     @IBOutlet weak var sentence: UILabel!
    
-    @IBAction func changeBand(sender: AnyObject) {
+    @IBOutlet weak var numberChanging: UILabel!
+   
+    @IBAction func changeColor(sender: AnyObject) {
+        
     
-    bandLabel.textColor = UIColor.blueColor()
-    sentence.textColor = UIColor.redColor()
+        
+        bandLabel.textColor = UIColor.blueColor()
+        sentence.textColor = UIColor.redColor()
+        
+        
+    }
+  
+    @IBAction func incrementNumber(sender: AnyObject) {
     
+        ++numberOnLabel
     
     }
 
@@ -28,7 +40,10 @@ class ViewController: UIViewController {
         
         bandLabel.text = favoriteBand
         sentence.text = "\(favoriteBand) has \(numberOfMembers) members in it."
-      
+        numberChanging.text = numberOnLabel
+
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,10 +53,13 @@ class ViewController: UIViewController {
 
     var favoriteBand:String = "The Fray"
     var numberOfMembers:Int = 5
-    
+    var numberOnLabel = "1".toInt()
  
     
 
     
 }
+
+
+sentence.text = "There are" + numberOfMembers + "In the band"
 
