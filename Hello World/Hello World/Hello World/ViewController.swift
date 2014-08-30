@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         bandLabel.text = favoriteBand
         sentence.text = "\(favoriteBand) has \(numberOfMembers) members in it."
-        numberChanging.text = numberOnLabel
+        numberChanging.text = "\(numberOnLabel)"
 
         
         
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 
     var favoriteBand:String = "The Fray"
     var numberOfMembers:Int = 5
-    var numberOnLabel = "1".toInt()
+    var numberOnLabel = 1
  
     
 
@@ -61,5 +61,4 @@ class ViewController: UIViewController {
 }
 
 
-sentence.text = "There are" + numberOfMembers + "In the band"
 
