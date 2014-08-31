@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "993DBCA019B291F9007856F4"
+               BlueprintIdentifier = "9979A6B819B2A66E006F8931"
                BuildableName = "Pro Cast.app"
                BlueprintName = "Pro Cast"
                ReferencedContainer = "container:Pro Cast.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "993DBCB519B291F9007856F4"
+               BlueprintIdentifier = "9979A6CD19B2A66E006F8931"
                BuildableName = "Pro CastTests.xctest"
                BlueprintName = "Pro CastTests"
                ReferencedContainer = "container:Pro Cast.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "993DBCB519B291F9007856F4"
+               BlueprintIdentifier = "9979A6CD19B2A66E006F8931"
                BuildableName = "Pro CastTests.xctest"
                BlueprintName = "Pro CastTests"
                ReferencedContainer = "container:Pro Cast.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "993DBCA019B291F9007856F4"
+            BlueprintIdentifier = "9979A6B819B2A66E006F8931"
             BuildableName = "Pro Cast.app"
             BlueprintName = "Pro Cast"
             ReferencedContainer = "container:Pro Cast.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "993DBCA019B291F9007856F4"
+            BlueprintIdentifier = "9979A6B819B2A66E006F8931"
             BuildableName = "Pro Cast.app"
             BlueprintName = "Pro Cast"
             ReferencedContainer = "container:Pro Cast.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "993DBCA019B291F9007856F4"
+            BlueprintIdentifier = "9979A6B819B2A66E006F8931"
             BuildableName = "Pro Cast.app"
             BlueprintName = "Pro Cast"
             ReferencedContainer = "container:Pro Cast.xcodeproj">
