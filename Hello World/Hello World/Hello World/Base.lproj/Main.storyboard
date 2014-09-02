@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qRv-wt-NVz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,7 +23,7 @@
                                 <state key="normal" backgroundImage="BrownTexturedBackground">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </button>
@@ -88,14 +90,26 @@
                                 </variation>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FIv-SY-l38" secondAttribute="trailing" id="57m-8M-Jg1"/>
+                            <constraint firstItem="FIv-SY-l38" firstAttribute="leading" secondItem="V9b-mC-LWa" secondAttribute="leadingMargin" id="6Hq-bx-n0h"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="FIv-SY-l38"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="57m-8M-Jg1"/>
+                                <exclude reference="6Hq-bx-n0h"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="FIv-SY-l38"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="57m-8M-Jg1"/>
+                                <include reference="6Hq-bx-n0h"/>
                             </mask>
                         </variation>
                     </view>
