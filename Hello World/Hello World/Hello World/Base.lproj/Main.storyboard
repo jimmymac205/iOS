@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="161" y="28" width="79" height="21"/>
+                                    <rect key="frame" x="161" y="28" width="124" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-gl-ZqM">
@@ -116,7 +116,7 @@
                     <connections>
                         <outlet property="bandLabel" destination="yOM-5z-dI4" id="wmZ-TX-k35"/>
                         <outlet property="numberChanging" destination="EU0-yk-hZI" id="jou-N9-3ga"/>
-                        <outlet property="secondBandLabel" destination="yOM-5z-dI4" id="1oS-64-nc4"/>
+                        <outlet property="secondBandLabel" destination="yOM-5z-dI4" id="eyE-t9-IMc"/>
                         <outlet property="sentence" destination="jah-Ee-Yzo" id="GEn-g0-Lyy"/>
                     </connections>
                 </viewController>

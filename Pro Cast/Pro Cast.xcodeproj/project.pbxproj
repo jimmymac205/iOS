@@ -13,6 +13,9 @@
 		9979A6C719B2A66E006F8931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9979A6C519B2A66E006F8931 /* Main.storyboard */; };
 		9979A6C919B2A66E006F8931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9979A6C819B2A66E006F8931 /* Images.xcassets */; };
 		9979A6D519B2A66E006F8931 /* Pro_CastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9979A6D419B2A66E006F8931 /* Pro_CastTests.swift */; };
+		DF1ABBD619B75F6100C84BD1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1ABBD519B75F6100C84BD1 /* RegisterViewController.swift */; };
+		DF1ABBD819B75F9200C84BD1 /* LoggingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1ABBD719B75F9200C84BD1 /* LoggingInViewController.swift */; };
+		DF1ABBDA19B75FDE00C84BD1 /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1ABBD919B75FDE00C84BD1 /* RegisterSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		9979A6CE19B2A66E006F8931 /* Pro CastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pro CastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9979A6D319B2A66E006F8931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9979A6D419B2A66E006F8931 /* Pro_CastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro_CastTests.swift; sourceTree = "<group>"; };
+		DF1ABBD519B75F6100C84BD1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DF1ABBD719B75F9200C84BD1 /* LoggingInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingInViewController.swift; sourceTree = "<group>"; };
+		DF1ABBD919B75FDE00C84BD1 /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				9979A6BE19B2A66E006F8931 /* AppDelegate.swift */,
 				9979A6C319B2A66E006F8931 /* ViewController.swift */,
 				9979A6C519B2A66E006F8931 /* Main.storyboard */,
+				DF1ABBD919B75FDE00C84BD1 /* RegisterSuccessViewController.swift */,
+				DF1ABBD719B75F9200C84BD1 /* LoggingInViewController.swift */,
+				DF1ABBD519B75F6100C84BD1 /* RegisterViewController.swift */,
 				9979A6C819B2A66E006F8931 /* Images.xcassets */,
 				9979A6C019B2A66E006F8931 /* Pro_Cast.xcdatamodeld */,
 				9979A6BC19B2A66E006F8931 /* Supporting Files */,
@@ -214,6 +223,9 @@
 				9979A6C419B2A66E006F8931 /* ViewController.swift in Sources */,
 				9979A6C219B2A66E006F8931 /* Pro_Cast.xcdatamodeld in Sources */,
 				9979A6BF19B2A66E006F8931 /* AppDelegate.swift in Sources */,
+				DF1ABBDA19B75FDE00C84BD1 /* RegisterSuccessViewController.swift in Sources */,
+				DF1ABBD619B75F6100C84BD1 /* RegisterViewController.swift in Sources */,
+				DF1ABBD819B75F9200C84BD1 /* LoggingInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +413,7 @@
 				9979A6DA19B2A66E006F8931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9979A6DB19B2A66E006F8931 /* Build configuration list for PBXNativeTarget "Pro CastTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +422,7 @@
 				9979A6DD19B2A66E006F8931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

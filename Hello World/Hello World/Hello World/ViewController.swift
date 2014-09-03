@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var secondBandLabel: UILabel!
     
     @IBOutlet weak var bandLabel: UILabel!
     
@@ -28,11 +29,7 @@ class ViewController: UIViewController {
         
     }
   
-    @IBAction func incrementNumber(sender: AnyObject) {
-    
-        ++numberOnLabel
-    
-    }
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +47,11 @@ class ViewController: UIViewController {
     var numberOfMembers:Int = 5
     var numberOnLabel = 1
  
-    
+    @IBAction func incrementNumber(sender: AnyObject) {
+        
+        ++numberOnLabel
+        
+    }
 
     
 }
