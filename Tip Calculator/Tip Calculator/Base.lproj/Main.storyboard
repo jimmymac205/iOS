@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1h-yH-dFv">
+                                <rect key="frame" x="194" y="60" width="212" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szL-1r-sLE">
+                                <rect key="frame" x="277" y="136" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateFinal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGd-am-b2d"/>
+                                    <action selector="calculateTotal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2TJ-SP-SWi"/>
+                                    <action selector="startCalculation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5iY-RF-IOU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="a" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-Iy-1Di">
+                                <rect key="frame" x="188" y="174" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="szL-1r-sLE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="261" id="BMW-Be-H7K"/>
+                            <constraint firstItem="szL-1r-sLE" firstAttribute="top" secondItem="D1h-yH-dFv" secondAttribute="bottom" constant="46" id="EQN-GT-cUd"/>
+                            <constraint firstItem="D1h-yH-dFv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="178" id="Jns-pg-Q7Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="szL-1r-sLE" secondAttribute="trailing" constant="261" id="Kyp-U2-gy0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D1h-yH-dFv" secondAttribute="trailing" constant="178" id="h4w-vZ-n2s"/>
+                            <constraint firstItem="D1h-yH-dFv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="l69-Zz-axD"/>
+                            <constraint firstItem="szL-1r-sLE" firstAttribute="top" secondItem="D1h-yH-dFv" secondAttribute="bottom" constant="46" id="uxK-tl-pdq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayFinal" destination="x8d-Iy-1Di" id="2Hg-kJ-4p2"/>
+                        <outlet property="totalBill" destination="D1h-yH-dFv" id="6fI-tg-dAi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
