@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
-        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-Ea-UZ5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-Ea-UZ5">
                                 <rect key="frame" x="279" y="367" width="43" height="30"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -26,20 +25,20 @@
                                     <segue destination="Y1r-sl-94l" kind="show" id="wQo-t0-1XU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-13-3eo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-13-3eo">
                                 <rect key="frame" x="203" y="180" width="194" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cooltext1697705494" translatesAutoresizingMaskIntoConstraints="NO" id="Rft-ns-5fV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cooltext1697705494" translatesAutoresizingMaskIntoConstraints="NO" id="Rft-ns-5fV">
                                 <rect key="frame" x="160" y="20" width="280" height="88"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvT-ui-gvQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvT-ui-gvQ">
                                 <rect key="frame" x="203" y="273" width="194" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-am-SXs">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-am-SXs">
                                 <rect key="frame" x="272" y="440" width="57" height="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,27 +49,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rft-ns-5fV" secondAttribute="trailing" constant="144" id="4dQ-bD-Pnu"/>
-                            <constraint firstItem="TuU-Ea-UZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="263" id="AWj-jX-Ps2"/>
-                            <constraint firstItem="Q8e-am-SXs" firstAttribute="top" secondItem="TuU-Ea-UZ5" secondAttribute="bottom" constant="43" id="FiB-2V-cpa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Q8e-am-SXs" secondAttribute="trailing" constant="255" id="KfE-2z-Two"/>
-                            <constraint firstItem="kvT-ui-gvQ" firstAttribute="top" secondItem="Sxy-13-3eo" secondAttribute="bottom" constant="63" id="O84-eh-iGf"/>
-                            <constraint firstItem="TuU-Ea-UZ5" firstAttribute="top" secondItem="kvT-ui-gvQ" secondAttribute="bottom" constant="64" id="TIx-td-FXg"/>
-                            <constraint firstItem="Sxy-13-3eo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="187" id="VoP-dl-ztT"/>
-                            <constraint firstItem="Q8e-am-SXs" firstAttribute="top" secondItem="TuU-Ea-UZ5" secondAttribute="bottom" constant="43" id="Zb6-9U-QpB"/>
-                            <constraint firstItem="kvT-ui-gvQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="187" id="Zzu-CY-8ga"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Sxy-13-3eo" secondAttribute="trailing" constant="187" id="gyH-ph-MWY"/>
-                            <constraint firstItem="Sxy-13-3eo" firstAttribute="top" secondItem="Rft-ns-5fV" secondAttribute="bottom" constant="72" id="iXN-Tx-Zvq"/>
-                            <constraint firstItem="Rft-ns-5fV" firstAttribute="top" secondItem="ipO-1w-cC8" secondAttribute="bottom" id="iqr-Mo-alm"/>
-                            <constraint firstItem="Sxy-13-3eo" firstAttribute="top" secondItem="Rft-ns-5fV" secondAttribute="bottom" constant="72" id="kHq-nN-kYo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TuU-Ea-UZ5" secondAttribute="trailing" constant="262" id="kwT-5D-02J"/>
-                            <constraint firstItem="TuU-Ea-UZ5" firstAttribute="top" secondItem="kvT-ui-gvQ" secondAttribute="bottom" constant="64" id="oOs-zV-SrH"/>
-                            <constraint firstItem="kvT-ui-gvQ" firstAttribute="top" secondItem="Sxy-13-3eo" secondAttribute="bottom" constant="63" id="sJa-aN-gmK"/>
-                            <constraint firstItem="Rft-ns-5fV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="tfK-eG-sZX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kvT-ui-gvQ" secondAttribute="trailing" constant="187" id="wW8-b4-EwF"/>
-                            <constraint firstItem="Q8e-am-SXs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="256" id="xY8-Zn-HS0"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MOg-pl-QH2"/>
                 </viewController>
